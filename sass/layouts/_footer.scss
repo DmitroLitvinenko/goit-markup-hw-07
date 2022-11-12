@@ -1,0 +1,48 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2f303a;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.join-container {
+    margin-left: 70px;
+}
+
+.logo-footer {
+    display: inline-block;
+    color: var(--primary-white);
+}
+
+.footer .logo {
+    margin-bottom: 20px;
+}
+
+.address-link {
+    line-height: 1.71;
+    color: var(--primary-white);
+    transition: color var(--animation);
+}
+
+.address-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-link {
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--animation);
+}
+
+.footer-soc-title,
+.mail-subscribe-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-white);
+}
