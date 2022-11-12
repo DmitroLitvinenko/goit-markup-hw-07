@@ -2,6 +2,9 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2f303a;
+     .logo {
+            margin-bottom: 20px;
+        }
 }
 
 .footer-container {
@@ -18,9 +21,7 @@
     color: var(--primary-white);
 }
 
-.footer .logo {
-    margin-bottom: 20px;
-}
+
 
 .address-link {
     line-height: 1.71;

@@ -10,4 +10,8 @@
     background-color: var(--accent-color);
     text-decoration: none;
     border: transparent;
+    &:hover,
+    &:focus {
+     background-color: #188ce8;
+      }
 }

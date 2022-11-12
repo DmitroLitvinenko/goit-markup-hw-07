@@ -76,9 +76,9 @@
 
 .icon {
     fill: currentColor;
+    &:hover,
+    &:focus {
+     fill: currentColor;
+      }
 }
 
-.icon:hover,
-.icon:focus {
-    fill: currentColor;
-}

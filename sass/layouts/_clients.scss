@@ -18,10 +18,10 @@
     border-radius: 4px;
     fill: #afb1b8;
     transition: fill var(--animation), border-color var(--animation);
+    &:hover,
+    &:focus {
+     fill: var(--accent-color);
+     border-color: var(--accent-color);
+        }
 }
 
-.clients-link:hover,
-.clients-link:focus {
-    fill: var(--accent-color);
-    border-color: var(--accent-color);
-}

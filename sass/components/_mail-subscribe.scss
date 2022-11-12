@@ -12,14 +12,15 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    &::placeholder {
+            font-size: 16px;
+            line-height: 1.25;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+        }
 }
 
-.mail-subscribe-input::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
+
 
 .btn-mail-send {
     display: inline-flex;
@@ -30,12 +31,13 @@
     border-radius: 4px;
     color: var(--primary-white);
     transition: background-color var(--animation), box-shadow var(--animation);
+    &:hover,
+        &:focus {
+            background-color: #188ce8;
+        }
 }
 
-.btn-mail-send:hover,
-.btn-mail-send:focus {
-    background-color: #188ce8;
-}
+
 
 .mail-send-icon {
     margin-left: 10px;

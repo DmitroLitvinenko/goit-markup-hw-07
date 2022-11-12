@@ -18,10 +18,10 @@
     fill: #afb1b8;
     border-radius: 50%;
     transition: fill var(--animation), background-color var(--animation);
+    &:hover,
+    &:focus {
+     fill: #ffffff;
+     background-color: var(--accent-color);
+        }
 }
 
-.team-soc-link:hover,
-.team-soc-link:focus {
-    fill: #ffffff;
-    background-color: var(--accent-color);
-}

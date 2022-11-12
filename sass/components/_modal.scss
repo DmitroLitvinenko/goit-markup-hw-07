@@ -45,12 +45,13 @@
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: fill var(--animation);
+     &:hover,
+     &:focus {
+            fill: var(--accent-color);
+        }
 }
 
-.modal-close:hover,
-.modal-close:focus {
-    fill: var(--accent-color);
-}
+
 
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%);
@@ -107,23 +108,18 @@
     border-radius: 4px;
     outline: transparent;
     transition: border-color var(--animation), fill var(--animation);
-}
-
-.modal-input:focus,
-.modal-comment:focus {
-    border-color: var(--accent-color);
-}
-
-.modal-input:focus+.modal-input-icon {
-    fill: var(--accent-color);
-}
-
-.modal-input::placeholder,
-.modal-comment::placeholder {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
+    &:focus {
+            border-color: var(--accent-color);
+            & + .modal-input-icon {
+                    fill: var(--accent-color);
+                }
+        }
+        &::placeholder {
+            font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.01em;
+            color: rgba(117, 117, 117, 0.5);
+        }
 }
 
 .modal-comment {
@@ -135,6 +131,15 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-color var(--animation);
+    &:focus {
+            border-color: var(--accent-color);
+        }
+    &::placeholder {
+     font-size: 12px;
+     line-height: 1.17;
+     letter-spacing: 0.01em;
+     color: rgba(117, 117, 117, 0.5);
+        }
 }
 
 .check-label {
@@ -147,31 +152,31 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+     span {
+      width: 16px;
+      height: 15px;
+      border: 2px solid #000000;
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      fill: transparent;
+      transition: fill var(--accent-color), background-color var(--accent-color),
+      border-color var(--animation);
+        .input-check:checked + & {
+           background-color: var(--accent-color);
+           border-color: transparent;
+           fill: var(--primary-white);
+           }
+        .input-check:focus + & {
+            border-color: var(--accent-color);
+            transition: border-color var(--animation);
+             }
+        }
 }
 
-.check-label span {
-    width: 16px;
-    height: 15px;
-    border: 2px solid #000000;
-    border-radius: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    fill: transparent;
-    transition: fill var(--accent-color), background-color var(--accent-color),
-        border-color var(--animation);
-}
 
-.input-check:checked+.check-label span {
-    background-color: var(--accent-color);
-    border-color: transparent;
-    fill: var(--primary-white);
-}
 
-.input-check:focus+.check-label span {
-    border-color: var(--accent-color);
-    transition: border-color var(--animation);
-}
 
 .privacy-link {
     color: var(--accent-color);
