@@ -1,13 +1,13 @@
-.advantage-list {
+.icons__list {
     display: flex;
     gap: 30px;
 }
 
-.advantage-item {
+.icons__item {
     width: calc((100% - 90px) / 3);
 }
 
-.icon-advantage {
+.icons__icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,7 @@
     background-color: #f5f4fa;
 }
 
-.advantage-title {
+.icons__title {
     margin-bottom: 10px;
     font-size: 14px;
     font-weight: 700;
@@ -26,7 +26,7 @@
     color: var(--secondary-font-color);
 }
 
-.advantage-description {
+.icons__description {
     line-height: 1.71;
     letter-spacing: 0.03em;
 }

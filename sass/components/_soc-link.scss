@@ -1,15 +1,15 @@
-.team-soc-list {
+.soc-link {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
-.team-soc-item {
+.soc-link__item {
     width: 44px;
     height: 44px;
 }
 
-.team-soc-link {
+.soc-link__link {
     width: 100%;
     height: 100%;
     display: flex;

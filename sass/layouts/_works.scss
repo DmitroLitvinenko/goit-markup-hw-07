@@ -2,17 +2,17 @@
     padding-top: 0;
 }
 
-.works-list {
+.image {
     display: flex;
     gap: 30px;
 }
 
-.works-item {
+.image__item {
     width: calc((100% - 60px) / 3);
     position: relative;
 }
 
-.works-item-description {
+.image__description {
     width: 370px;
     height: 70px;
     position: absolute;
