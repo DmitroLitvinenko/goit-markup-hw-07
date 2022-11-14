@@ -1,19 +1,19 @@
-.project-list {
+.tile {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
 }
 
-.project-item {
+.tile__item {
     width: calc((100% - 60px) / 3);
 }
 
-.project-text {
+.project {
     position: relative;
     overflow: hidden;
 }
 
-.project-top-text {
+.project__text {
     padding: 63px 24px;
     position: absolute;
     top: 0;
@@ -25,13 +25,13 @@
     transform: translateY(100%);
     transition: transform var(--animation);
     overflow: auto;
-    .portfolio-link:hover &,
-    .portfolio-link:focus & {
+    .tile__link:hover &,
+    .ptile__link:focus & {
             transform: translateY(0);
         }
 }
 
-.portfolio-link {
+.tile__link {
     transition: box-shadow var(--animation);
     &:hover,
     &:focus {
@@ -44,7 +44,7 @@
 
 
 
-.project-title {
+.project__title {
     margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
@@ -53,13 +53,13 @@
     color: var(--secondary-font-color);
 }
 
-.project-description {
+.project__description {
     font-size: 16px;
     line-height: 1.88;
     color: var(--primary-font-color);
 }
 
-.project-container {
+.project__container {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
